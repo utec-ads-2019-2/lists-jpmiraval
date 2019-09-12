@@ -2,6 +2,7 @@
 #define LIST_H
 
 #include "node.h"
+#include <string>
 
 template <typename T>
 class List {
