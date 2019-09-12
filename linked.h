@@ -2,7 +2,7 @@
 #define LINKED_H
 
 #include "list.h"
-#include "iterators\bidirectional_iterator.h"
+#include "iterators/bidirectional_iterator.h"
 
 template <typename T>
 class LinkedList : public List<T> {
@@ -29,7 +29,7 @@ class LinkedList : public List<T> {
 
         void push_front(T value) {
             // TODO
-            Node *temp = new Node <T>;
+            Node<T> *temp = new Node <T>;
             temp->data = value;
                 if(empty()){
                         this->tail = temp;
@@ -42,7 +42,7 @@ class LinkedList : public List<T> {
 
         void push_back(T value) {
             // TODO
-                Node *temp = new Node <T>;
+                Node<T> *temp = new Node <T>;
                 temp->data = value;
                 if(empty()){
                         this->head = temp;
@@ -73,7 +73,7 @@ class LinkedList : public List<T> {
                 if (index > size()){
                         throw runtime_error("Out of range");
                 }else{
-                        auto temp = this->Head;
+                        auto temp = this->head;
                         for(int i = 0; i < index;i++){
                                 temp = temp->next;
                         }
@@ -122,7 +122,7 @@ class LinkedList : public List<T> {
         void reverse() {
             // TODO
             auto temp = this->head;
-            auto temp2 = this->tail
+            auto temp2 = this->tail;
                     while(temp->next != temp2 || temp->next != temp2->prev){
                             auto dataTemp = temp->data;
                             temp->data = temp2->data;

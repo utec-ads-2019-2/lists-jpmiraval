@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lists_jpmiraval.dir/mock/mocker.cpp.o CMakeFiles/lists_jpmiraval.dir/test/tester.cpp.o CMakeFiles/lists_jpmiraval.dir/main.cpp.o  -o lists_jpmiraval 

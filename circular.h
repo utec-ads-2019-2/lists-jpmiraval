@@ -34,14 +34,14 @@ class CircularLinkedList : public List<T> {
                     this->head = temp;
                     this->tail = temp;
                     this->head->next = temp;
-                    this->head->prev = next;
+                    this->head->prev = temp;
                     this->tail->next = temp;
                     this->tail->prev = temp;
             }else{
                     temp->next = this->head;
                     this->head->prev = temp;
-                    this->head = prev;
-                    this->tail->next = head;
+                    this->head = temp;
+                    this->tail->next = this->head;
             }
             this->nodes++;
         }
@@ -54,7 +54,7 @@ class CircularLinkedList : public List<T> {
                         this->head = temp;
                         this->tail = temp;
                         this->head->next = temp;
-                        this->head->prev = next;
+                        this->head->prev = temp;
                         this->tail->next = temp;
                         this->tail->prev = temp;
                 }else{
@@ -64,7 +64,7 @@ class CircularLinkedList : public List<T> {
                         this->head->prev = temp;
                         this->tail = temp;
                 }
-                this->nodeas++;
+                this->nodes++;
         }
 
         void pop_front() {
@@ -76,7 +76,6 @@ class CircularLinkedList : public List<T> {
                 this->tail->next = this->head->next;
                 this->head->next->prev = nullptr;
                 this->head = this->head->next;
-                delete temp;
         }
 
         void pop_back() {

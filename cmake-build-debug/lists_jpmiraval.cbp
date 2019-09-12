@@ -4,134 +4,134 @@
 	<Project>
 		<Option title="lists_jpmiraval"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug"/>
+				<Option working_dir="/home/utec/lists-jpmiraval/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lists_jpmiraval">
-				<Option output="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug/lists_jpmiraval.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/."/>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/iterators"/>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/mock"/>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/test"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 lists_jpmiraval"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lists_jpmiraval/fast">
-				<Option output="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug/lists_jpmiraval.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/."/>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/iterators"/>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/mock"/>
-					<Add directory="C:/Users/pc-games/Documents/lists-jpmiraval/test"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 lists_jpmiraval/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug"/>
+				<Option working_dir="/home/utec/lists-jpmiraval/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\pc-games\Documents\lists-jpmiraval\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lists_jpmiraval">
+				<Option output="/home/utec/lists-jpmiraval/cmake-build-debug/lists_jpmiraval" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/utec/lists-jpmiraval/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/utec/lists-jpmiraval/."/>
+					<Add directory="/home/utec/lists-jpmiraval/iterators"/>
+					<Add directory="/home/utec/lists-jpmiraval/mock"/>
+					<Add directory="/home/utec/lists-jpmiraval/test"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 lists_jpmiraval"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lists_jpmiraval/fast">
+				<Option output="/home/utec/lists-jpmiraval/cmake-build-debug/lists_jpmiraval" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/utec/lists-jpmiraval/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/utec/lists-jpmiraval/."/>
+					<Add directory="/home/utec/lists-jpmiraval/iterators"/>
+					<Add directory="/home/utec/lists-jpmiraval/mock"/>
+					<Add directory="/home/utec/lists-jpmiraval/test"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 lists_jpmiraval/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/utec/lists-jpmiraval/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/utec/lists-jpmiraval/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/circular.h">
+		<Unit filename="/home/utec/lists-jpmiraval/circular.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/forward.h">
+		<Unit filename="/home/utec/lists-jpmiraval/forward.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/iterator.h">
+		<Unit filename="/home/utec/lists-jpmiraval/iterator.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/iterators/bidirectional_iterator.h">
+		<Unit filename="/home/utec/lists-jpmiraval/iterators/bidirectional_iterator.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/iterators/forward_iterator.h">
+		<Unit filename="/home/utec/lists-jpmiraval/iterators/forward_iterator.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/linked.h">
+		<Unit filename="/home/utec/lists-jpmiraval/linked.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/list.h">
+		<Unit filename="/home/utec/lists-jpmiraval/list.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/main.cpp">
+		<Unit filename="/home/utec/lists-jpmiraval/main.cpp">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/mock/mocker.cpp">
+		<Unit filename="/home/utec/lists-jpmiraval/mock/mocker.cpp">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/mock/mocker.h">
+		<Unit filename="/home/utec/lists-jpmiraval/mock/mocker.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/node.h">
+		<Unit filename="/home/utec/lists-jpmiraval/node.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/test/tester.cpp">
+		<Unit filename="/home/utec/lists-jpmiraval/test/tester.cpp">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/test/tester.h">
+		<Unit filename="/home/utec/lists-jpmiraval/test/tester.h">
 			<Option target="lists_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/pc-games/Documents/lists-jpmiraval/CMakeLists.txt">
+		<Unit filename="/home/utec/lists-jpmiraval/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

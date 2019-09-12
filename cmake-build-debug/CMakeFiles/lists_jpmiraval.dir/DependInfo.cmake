@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/pc-games/Documents/lists-jpmiraval/main.cpp" "C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/main.cpp.obj"
-  "C:/Users/pc-games/Documents/lists-jpmiraval/mock/mocker.cpp" "C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/mock/mocker.cpp.obj"
-  "C:/Users/pc-games/Documents/lists-jpmiraval/test/tester.cpp" "C:/Users/pc-games/Documents/lists-jpmiraval/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/test/tester.cpp.obj"
+  "/home/utec/lists-jpmiraval/main.cpp" "/home/utec/lists-jpmiraval/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/main.cpp.o"
+  "/home/utec/lists-jpmiraval/mock/mocker.cpp" "/home/utec/lists-jpmiraval/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/mock/mocker.cpp.o"
+  "/home/utec/lists-jpmiraval/test/tester.cpp" "/home/utec/lists-jpmiraval/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/test/tester.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -30,7 +30,7 @@ class ForwardList : public List<T> {
 
         void push_front(T value) {
             // TODO
-            Node *temp = new Node<T>;
+            Node<T> *temp = new Node<T>;
             temp->data = value;
             this->nodes++;
 
@@ -40,7 +40,7 @@ class ForwardList : public List<T> {
 
         void push_back(T value) {
             // TODO
-            Node *temp = new Node<T>;
+            Node<T> *temp = new Node<T>;
             temp->data = value;
             this->nodes++;
             this->tail->next = temp;
@@ -83,7 +83,7 @@ class ForwardList : public List<T> {
                     temp = temp->next;
             }
 
-            return temporal->data;
+            return temp->data;
         }
 
         bool empty() {
@@ -161,7 +161,7 @@ class ForwardList : public List<T> {
 
         void merge(ForwardList<T> list) {
             // TODO
-            auto temp = head;
+            auto temp = this->head;
             for(int i = 0; i < list.size();i++){
                 push_back(temp->data);
                 temp = temp->next;
