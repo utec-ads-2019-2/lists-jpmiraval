@@ -11,22 +11,34 @@ class BidirectionalIterator : public Iterator<T> {
 
         BidirectionalIterator<T> operator=(BidirectionalIterator<T> other) {
             // TODO
+            this->current = other.current;
+            return *this;
         }
 
         bool operator!=(BidirectionalIterator<T> other) {
             // TODO
+            return this->current!=other.current;
         }
 
         BidirectionalIterator<T> operator++() {
             // TODO
+                if(this->current!= nullptr)
+                        this->current=this->current->next;
+                return *this;
         }
 
         BidirectionalIterator<T> operator--() {
             // TODO
+                if(this->current!= nullptr)
+                        this->current=this->current->prev;
+                return *this;
         }
 
         T operator*() {
             // TODO
+                if(this->current!= nullptr)
+                        return this->current->data;
+                throw out_of_range("List is empty");
         }
 };
 
