@@ -56,15 +56,16 @@ class LinkedList : public List<T> {
 
         void pop_back() {
             // TODO
-            if(this->head!=nullptr){
-                this->tail = this->tail->prev;
-                this->nodes = this->nodes-1;
-            }
-            if(this->nodes==0){
-                this->head= nullptr;
-            }else{
-                this->tail->next= nullptr;}
+            auto temp = this->tail;
+            this->tail = this->tail->prev;
+            temp->prev = nullptr;
+            delete temp;
 
+            if(this->size()<=1){
+                this->head = nullptr;
+                this->tail = nullptr;
+            }
+            this->nodes--;
         }
 
         T operator[](int index) {
@@ -92,7 +93,7 @@ class LinkedList : public List<T> {
 
         bool empty() {
             // TODO
-            
+
             return this->nodes == 0;
         }
 
@@ -103,7 +104,7 @@ class LinkedList : public List<T> {
 
         void clear() {
             // TODO
-
+            while(this->nodes != 0) pop_back();
         }
 
         void sort() {

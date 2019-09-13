@@ -91,11 +91,25 @@ class CircularLinkedList : public List<T> {
 
         T operator[](int index) {
             // TODO
-            auto temp = this->head;
-            for(int i = 0; i < index; i++){
-                    temp = temp->next;
+            if(this->head!= nullptr && index<this->nodes){
+                auto contador=0;
+                auto temp=this->head;
+                if(index<=(this->size()/2)){
+                    while(contador!=index){
+                        temp=temp->next;
+                        contador++;
+                    }
+                }
+                else{
+                    temp=this->tail;
+                    while((index+contador)<this->size()-1){
+                        temp=temp->prev;
+                        contador++;
+                    }
+                }
+
+                return temp->data;
             }
-            return temp->data;
 
         }
 
@@ -111,35 +125,22 @@ class CircularLinkedList : public List<T> {
 
         void clear() {
             // TODO
-            while(!empty()){
-                    pop_front();
-            }
+            this->nodes = 0;
         }
 
         void sort() {
             // TODO
-                T array[size()];
-                auto it = this->head;
-                for (int i = 0; i <size() ; ++i) {
-                        array[i] = it->data;
-                        it = it->next;
-                }
-
-                clear();
-
-                for(int i = 0; i<size(); i++){
-                    for(int k = 0; k<size();k++){
-                            if (array[i]>array[k]){
-                                auto temp = array[i];
-                                array[i] = array[k];
-                                array[k] = temp;
-                            }
+            for(int j=0; j<size()-1; j++){
+                auto node = this->head;
+                for(int i=0; i<size()-j-1; i++){
+                    if(node->data > node->next->data){
+                        T dataTemp = node->data;
+                        node->data = node->next->data;
+                        node->next->data = dataTemp;
                     }
+                    node = node->next;
                 }
-
-                for(int i = size()-1; i>=0; i--){
-                        push_front(array[i]);
-                }
+            }
 
         }
     

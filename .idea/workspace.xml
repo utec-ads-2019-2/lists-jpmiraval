@@ -13,13 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="85bfaeef-ce5c-4567-a27c-d1f4f3caa169" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lists_jpmiraval.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/circular.h" beforeDir="false" afterPath="$PROJECT_DIR$/circular.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lists_jpmiraval" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lists_jpmiraval" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forward.h" beforeDir="false" afterPath="$PROJECT_DIR$/forward.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/iterator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iterators/forward_iterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/iterators/forward_iterator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linked.h" beforeDir="false" afterPath="$PROJECT_DIR$/linked.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/list.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/tester.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/tester.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +78,7 @@
       <updated>1568264380963</updated>
       <workItem from="1568264382277" duration="27000" />
       <workItem from="1568264502318" duration="4642000" />
-      <workItem from="1568330042400" duration="5079000" />
+      <workItem from="1568330042400" duration="5855000" />
     </task>
     <servers />
   </component>
@@ -105,7 +101,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/linked.h</url>
-          <line>102</line>
+          <line>103</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
