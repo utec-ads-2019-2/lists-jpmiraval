@@ -31,6 +31,8 @@ node.h
 /home/utec/lists-jpmiraval/linked.h
 list.h
 /home/utec/lists-jpmiraval/list.h
+algorithm
+/home/utec/lists-jpmiraval/algorithm
 iterators/bidirectional_iterator.h
 /home/utec/lists-jpmiraval/iterators/bidirectional_iterator.h
 
@@ -39,12 +41,6 @@ node.h
 /home/utec/lists-jpmiraval/node.h
 string
 -
-
-/home/utec/lists-jpmiraval/main.cpp
-iostream
--
-test/tester.h
-/home/utec/lists-jpmiraval/test/tester.h
 
 /home/utec/lists-jpmiraval/mock/mocker.h
 random

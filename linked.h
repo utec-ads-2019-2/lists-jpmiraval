@@ -2,6 +2,7 @@
 #define LINKED_H
 
 #include "list.h"
+#include "algorithm"
 #include "iterators/bidirectional_iterator.h"
 
 template <typename T>
@@ -29,29 +30,20 @@ class LinkedList : public List<T> {
 
         void push_front(T value) {
             // TODO
-            Node<T> *temp = new Node <T>;
-            temp->data = value;
-                if(empty()){
-                        this->tail = temp;
-                }
-            this->nodes++;
-            temp->next = this->head;
-            this->head->prev = temp;
-            this->head = temp;
+
         }
 
         void push_back(T value) {
             // TODO
-                Node<T> *temp = new Node <T>;
-                temp->data = value;
-                if(empty()){
-                        this->head = temp;
-                }
-                this->tail->next = temp;
-                temp->prev = this->tail;
-                this->tail = temp;
-                temp->next = nullptr;
-                this->nodes++;
+            auto nodo_nuevo=new Node<T>();
+            nodo_nuevo->data=value;
+            if(this->head== nullptr){
+                this->head=nodo_nuevo;}
+            else{
+                nodo_nuevo->prev=this->tail;
+                this->tail->next=nodo_nuevo;}
+            this->tail=nodo_nuevo;
+            this->nodes++;
         }
 
         void pop_front() {
@@ -64,28 +56,43 @@ class LinkedList : public List<T> {
 
         void pop_back() {
             // TODO
-            this->tail->prev->next = nullptr;
-            this->tail = this->tail->prev;
+            if(this->head!=nullptr){
+                this->tail = this->tail->prev;
+                this->nodes = this->nodes-1;
+            }
+            if(this->nodes==0){
+                this->head= nullptr;
+            }else{
+                this->tail->next= nullptr;}
+
         }
 
         T operator[](int index) {
             // TODO
-                if (index > size()){
-                        throw runtime_error("Out of range");
-                }else{
-                        auto temp = this->head;
-                        for(int i = 0; i < index;i++){
-                                temp = temp->next;
-                        }
-
-                        return temp->data;
+            if(this->head!= nullptr && index<this->nodes){
+                auto contador=0;
+                auto temp=this->head;
+                if(index<=(this->size()/2)){
+                    while(contador!=index){
+                        temp=temp->next;
+                        contador++;
+                    }
+                }
+                else{
+                    temp=this->tail;
+                    while((index+contador)<this->size()-1){
+                        temp=temp->prev;
+                        contador++;
+                    }
                 }
 
+                return temp->data;
+            }
         }
 
         bool empty() {
             // TODO
-
+            
             return this->nodes == 0;
         }
 
@@ -96,41 +103,43 @@ class LinkedList : public List<T> {
 
         void clear() {
             // TODO
-            while(!empty()){
-                    pop_front();
-            }
+
         }
 
         void sort() {
             // TODO
-                auto temp = this->head;
-                auto temp2 = this->head;
-                for(int i = 0; i < size(); i++){
-                        for(int k = 0; k < size(); k++){
-                                temp2 = temp->next;
-                                if(temp2->data < temp->data){
-                                        auto temporal = temp2->data;
-                                        temp2->data = temp->data;
-                                        temp->data = temporal;
-                                }
-                        }
-                        temp = temp->next;
-                        temp2 = this->head;
+
+            for(int j=0; j<size()-1; j++){
+                auto node = this->head;
+                for(int i=0; i<size()-j-1; i++){
+                    if(node->data > node->next->data){
+                        T dataTemp = node->data;
+                        node->data = node->next->data;
+                        node->next->data = dataTemp;
+                    }
+                    node = node->next;
                 }
+            }
+
+
         }
-    
+
         void reverse() {
             // TODO
-            auto temp = this->head;
-            auto temp2 = this->tail;
-                    while(temp->next != temp2 || temp->next != temp2->prev){
-                            auto dataTemp = temp->data;
-                            temp->data = temp2->data;
-                            temp2->data = dataTemp;
-
-                            temp = temp->next;
-                            temp2 = temp2->prev;
-                    }
+            if(this->nodes>1){
+                Node<T>* temp1= nullptr;
+                Node<T>* temp2= this->head;
+                Node<T>* temp3= temp2->next;
+                while(temp2!= nullptr){
+                    temp2->next=temp1;
+                    temp2->prev=temp3;
+                    temp1=temp2;
+                    temp2=temp3;
+                    if(temp3!= nullptr)
+                        temp3=temp3->next;}
+                Node<T>* temporal= this->head;
+                this->head=this->tail;
+                this->tail=temporal;}
         }
 
         std::string name() {
