@@ -31,5 +31,4 @@ class BidirectionalIterator : public Iterator<T> {
             return this->current->data;
         }
 };
-
 #endif
