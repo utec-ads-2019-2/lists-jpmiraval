@@ -30,7 +30,6 @@ class LinkedList : public List<T> {
 
         void push_front(T value) {
             // TODO
-
         }
 
         void push_back(T value) {

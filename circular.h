@@ -19,6 +19,7 @@ class CircularLinkedList : public List<T> {
 
         T back() {
             // TODO
+            // No es necesario que la lista circular tenga cola
                 if ( empty() ) {
                         throw runtime_error("Empty list!");
                 }else{
@@ -146,6 +147,7 @@ class CircularLinkedList : public List<T> {
     
         void reverse() {
             // TODO
+            // No es tan eficiente
                 T array[size()];
                 auto it = this->head;
                 for (int i = 0; i <size() ; ++i) {
@@ -171,6 +173,7 @@ class CircularLinkedList : public List<T> {
 
 	    BidirectionalIterator<T> end() {
             // TODO
+            // Como controlas el caso de iterar sin do while?
             return BidirectionalIterator<T>(this->head);
         }
 

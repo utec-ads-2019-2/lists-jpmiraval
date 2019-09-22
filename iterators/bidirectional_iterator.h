@@ -9,6 +9,7 @@ class BidirectionalIterator : public Iterator<T> {
         BidirectionalIterator() : Iterator<T>() {};
         BidirectionalIterator(Node<T> *node) : Iterator<T>(node) {};
 
+        // Estás creando un nuevo iterador
         BidirectionalIterator<T> operator=(BidirectionalIterator<T> other) {
             return BidirectionalIterator<T>(other.current);
         }
@@ -16,6 +17,8 @@ class BidirectionalIterator : public Iterator<T> {
         bool operator!=(BidirectionalIterator<T> other) {
             return other.current != this->current;
         }
+
+        // Falta controlar el caso vacío
 
         BidirectionalIterator<T> operator++() {
             this->current = this->current->next;

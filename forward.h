@@ -53,6 +53,7 @@ public:
 
     void pop_front() {
         auto temp = this->head;
+        // Si la lista está vacía esto va a explotar
         if(this->head->next != nullptr){
             this->head = this->head->next;
         }
@@ -63,6 +64,7 @@ public:
     void pop_back() {
         auto temp = this->tail;
         auto node = this->head;
+        // Si la lista está vacía esto va a explotar
         while(node->next!=this->tail){
             node = node->next;
         }
@@ -110,6 +112,7 @@ public:
     }
 
     void reverse() {
+        // Esto puede ser más eficiente
         auto node1 = this->head;
         auto node2 = this->tail;
         for(int i = 0;i<size()/2;i++){
